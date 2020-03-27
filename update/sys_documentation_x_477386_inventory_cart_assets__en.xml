@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Cart Assets" language="en" table="x_477386_inventory_cart_assets">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Cart Assets</label>
+            <language>en</language>
+            <name>x_477386_inventory_cart_assets</name>
+            <plural>Cart Assets</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-27 09:54:03</sys_created_on>
+            <sys_id>78822031dbfb4010f4bd5c7a489619dc</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Cart Assets</sys_name>
+            <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+            <sys_update_name>sys_documentation_x_477386_inventory_cart_assets__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-27 09:54:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

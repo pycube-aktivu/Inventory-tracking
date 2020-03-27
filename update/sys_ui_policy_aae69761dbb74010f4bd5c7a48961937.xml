@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_477386_inventory_asset">sys_class_name=x_477386_inventory_asset^EQ<item display_value="Asset" endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="false" value="x_477386_inventory_asset"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>999</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Show asset tag and serial num</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-27 04:24:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aae69761dbb74010f4bd5c7a48961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show asset tag and serial num</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sys_ui_policy_aae69761dbb74010f4bd5c7a48961937</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 04:24:20</sys_updated_on>
+        <table>x_477386_inventory_asset</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Assets" section_id="a4be0619db330010f4bd5c7a489619f0" sys_domain="global" table="x_477386_inventory_product_model" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>12M.cmdb_model.alm_asset.model</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 04:29:45</sys_created_on>
+            <sys_id>a0be0619db330010f4bd5c7a489619f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assets" display_value="Assets" name="x_477386_inventory_product_model" sys_domain="global" view="Default view">a4be0619db330010f4bd5c7a489619f0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 04:29:45</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Assets</caption>
+            <header>false</header>
+            <name>x_477386_inventory_product_model</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 04:29:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a4be0619db330010f4bd5c7a489619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Assets</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+            <sys_update_name>sys_ui_section_a4be0619db330010f4bd5c7a489619f0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 04:29:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</application>
+        <file_path/>
+        <instance_id>bc3fda0cdbd9bb4052cec597059619b7</instance_id>
+        <instance_name>dev84871</instance_name>
+        <name>sys_ui_section_a4be0619db330010f4bd5c7a489619f0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Assets" section_id="a4be0619db330010f4bd5c7a489619f0" sys_domain="global" table="x_477386_inventory_product_model" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>12M.cmdb_model.alm_asset.model</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 04:29:45</sys_created_on><sys_id>a0be0619db330010f4bd5c7a489619f2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Assets" display_value="Assets" name="x_477386_inventory_product_model" sys_domain="global" view="Default view">a4be0619db330010f4bd5c7a489619f0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 04:29:45</sys_updated_on><sys_user/><type>list</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Assets</caption><header>false</header><name>x_477386_inventory_product_model</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 04:29:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a4be0619db330010f4bd5c7a489619f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Assets</sys_name><sys_overrides/><sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package><sys_policy/><sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope><sys_update_name>sys_ui_section_a4be0619db330010f4bd5c7a489619f0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 04:29:45</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-327858189</payload_hash>
+        <record_name>Product Model</record_name>
+        <reverted_from/>
+        <source>228a1534db3b0010f4bd5c7a4896191e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 04:29:45</sys_created_on>
+        <sys_id>60be0619db330010f4bd5c7a489619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171151a6e290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 04:29:45</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>e8be0619e83300103f3b87ff3a9fcdf3</update_guid>
+        <update_guid_history>e8be0619e83300103f3b87ff3a9fcdf3:-327858189</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 05:25:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>7ea3893b973745029ad8105211419019</sys_id>
+        <sys_metadata>a4be0619db330010f4bd5c7a489619f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assets</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_parent display_value="Product Model">790eca95db330010f4bd5c7a48961997</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_scope_delete display_value="">52facfa2685449a8abf8da2fa524e240</sys_scope_delete>
+        <sys_update_name>sys_ui_section_a4be0619db330010f4bd5c7a489619f0</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_a4be0619db330010f4bd5c7a489619f0">60be0619db330010f4bd5c7a489619f4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 05:25:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
+        <sp_dependency display_value="ChartJS">61c42a91dbb30010f4bd5c7a48961901</sp_dependency>
+        <sp_widget display_value="Items By model">b32bc0a9db7b0010f4bd5c7a4896195e</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 13:33:40</sys_created_on>
+        <sys_id>f72bc0a9db7b0010f4bd5c7a48961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ChartJS.Copy of Items By State</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_f72bc0a9db7b0010f4bd5c7a48961960</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 13:33:40</sys_updated_on>
+    </m2m_sp_widget_dependency>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Product Model</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Product Model</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Model" name="Model">c39a444147622100158b949b6c9a71de</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 04:27:39</sys_created_on>
+        <sys_id>ad3ecad5db330010f4bd5c7a48961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Product Model</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sys_wizard_answer_ad3ecad5db330010f4bd5c7a48961906</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 04:27:39</sys_updated_on>
+        <table/>
+        <target_url>x_477386_inventory_product_model.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

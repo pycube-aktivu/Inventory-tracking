@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>sc</category>
+        <client_script><![CDATA[function() {
+	var c = this;
+	console.log(c.data.categories);
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.badge-Montefiore{&#13;
+background: #c91b6d;&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+.category-widget {&#13;
+	border: 1px solid $panel-inner-border;&#13;
+  &#13;
+  .category-list {&#13;
+    .fa {&#13;
+      margin-right: 5px;&#13;
+    }&#13;
+    .l-h-1_6x {&#13;
+      line-height: 1.6em;&#13;
+    }&#13;
+    a {&#13;
+		width: 100%;&#13;
+      	vertical-align: middle;&#13;
+	    display: inline-block;&#13;
+    }&#13;
+    .list-group {&#13;
+      margin-bottom: 0;&#13;
+    }&#13;
+    .list-group-item {&#13;
+      padding: 0;&#13;
+      border: 0;&#13;
+    }&#13;
+    .group-item {&#13;
+      padding: 10px 15px;&#13;
+    }&#13;
+    .group-item-default {&#13;
+      &amp;:hover, &amp;:focus {&#13;
+        background-color: darken($panel-default-heading-bg, 2%);&#13;
+      }&#13;
+    }&#13;
+    .group-item-primary {&#13;
+      &amp;:hover, &amp;:focus {&#13;
+        border-left: 3px solid $primary !important;&#13;
+      }&#13;
+    }&#13;
+    .group-item-success {&#13;
+      &amp;:hover {&#13;
+        background-color: lighten($panel-success-heading-bg, 3%)&#13;
+      }&#13;
+    }&#13;
+    .group-item-info {&#13;
+      &amp;:hover, &amp;:focus {&#13;
+        background-color: lighten($panel-info-heading-bg, 3%)&#13;
+      }&#13;
+    }&#13;
+    .group-item-warning {&#13;
+      &amp;:hover, &amp;:focus {&#13;
+        background-color: $panel-warning-heading-bg&#13;
+      }&#13;
+    }&#13;
+    .group-item-danger {&#13;
+      &amp;:hover, &amp;:focus {&#13;
+        background-color: lighten($panel-danger-heading-bg, 3%)&#13;
+      }&#13;
+    }&#13;
+    &#13;
+    .list-bg-default {&#13;
+      background-color: $panel-default-heading-bg;&#13;
+    }&#13;
+    .list-bg-primary {&#13;
+      background-color: lighten($panel-info-heading-bg, 6%);&#13;
+    }&#13;
+    .list-bg-success {&#13;
+      background-color: lighten($panel-success-heading-bg, 6%);&#13;
+    }&#13;
+    .list-bg-info {&#13;
+      background-color: lighten($panel-info-heading-bg, 6%);&#13;
+    }&#13;
+    .list-bg-warning {&#13;
+      background-color: lighten($panel-warning-heading-bg, 3%);&#13;
+    }&#13;
+    .list-bg-danger {&#13;
+      background-color: lighten($panel-danger-heading-bg, 6%);&#13;
+    }&#13;
+  }&#13;
+}&#13;
+.panel-primary .badge {&#13;
+  background-color: $primary;&#13;
+  color: white;&#13;
+}&#13;
+.panel-default .badge {&#13;
+  background-color: $panel-default-text;&#13;
+  color: white&#13;
+}&#13;
+.panel-success .badge {&#13;
+  background-color:  $panel-success-text;&#13;
+  color: white;&#13;
+}&#13;
+.panel-info .badge {&#13;
+  background-color: $panel-info-text;&#13;
+  color: white;&#13;
+}&#13;
+.panel-warning .badge {&#13;
+  background-color: $panel-warning-text;&#13;
+  color: white;&#13;
+}&#13;
+.panel-danger .badge {&#13;
+  background-color: $panel-danger-text;&#13;
+  color: white;&#13;
+}&#13;
+.category-list .badge {&#13;
+  text-align: right;&#13;
+}&#13;
+.text-active {&#13;
+   color: $link-color;&#13;
+   border-left: 3px solid $primary&#13;
+}&#13;
+.text-default {&#13;
+   color: $text-muted;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{"options" :&#13;
+   {&#13;
+      "hide_xs" : false&#13;
+   }&#13;
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list>color</field_list>
+        <has_preview>true</has_preview>
+        <id>int_trk_categories</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Categories</name>
+        <option_schema>[{"name":"hide_xs","default_value":false,"section":"Behavior","label":"Hide at XS","type":"boolean"},{"name":"omit_badges","section":"Behavior","label":"Omit badges (may impact performance for large items in categories)","type":"boolean"},{"name":"check_can_view","default_value":"true","section":"Behavior","label":"Check canView per item","type":"boolean"},{"hint":"Choose between a flattened and a nested category structure (Nested may impact performance for large items in categories)","name":"category_layout","section":"Presentation","label":"Category Layout","type":"choice","choices":[{"label":"Flat","value":"Flat"},{"label":"Nested","value":"Nested"}]},{"displayValue":"Page","name":"page","section":"Data","label":"page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"hint":"Number of categories to load on page load","name":"number_of_categories_to_load","section":"Data","default_value":"15","label":"Number of categories to load","type":"integer"}]</option_schema>
+        <public>false</public>
+        <roles>snc_external,snc_internal</roles>
+        <script><![CDATA[(function() {
+	var page_id = $sp.getParameter('id');
+	data.page_id = page_id;
+	var catalog_id = $sp.getParameter("cat_id") ? $sp.getParameter("cat_id") + "" : "";
+	data.catalog_id = catalog_id;
+    var currentUser = gs.getUser();
+    data.company_id = currentUser.getCompanyID();
+    data.categories = [];
+
+    var gr = new GlideRecord('cmdb_model_category');
+    if (data.company_id != '') {
+        gr.addQuery('x_477386_inventory_company', data.company_id);
+    }
+    gr.query();
+    while (gr.next()) {
+        var category = {};
+        category.name = gr.name.toString();;
+        category.category_id = gr.x_477386_inventory_category_id.toString();
+        category.sys_id = gr.sys_id.toString();
+        category.count = 0;
+        var gr_count = new GlideAggregate('x_477386_inventory_asset');
+        gr_count.addQuery("model_category", gr.sys_id);
+        gr_count.addAggregate('SUM', 'quantity');
+        //gr_count.groupBy('quantity');
+		gr_count.setGroup(false);
+        gr_count.query();
+        if (gr_count.next()) {
+            category.count = gr_count.getAggregate('SUM', 'quantity');
+        }
+        data.categories.push(category);
+    }
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 07:59:21</sys_created_on>
+        <sys_id>66ae7a9ddbf30010f4bd5c7a489619f8</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Categories</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sp_widget_66ae7a9ddbf30010f4bd5c7a489619f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 09:22:13</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-info">
+  
+<div class="panel-heading">
+    <h2 class="h4 panel-title">
+      <span class="pull-right visible-xs" >
+      	<i class="fa fa-times-circle" ng-click="hideBrowseCategory()" aria-label="${Show Items}" tabindex="0"/>
+      </span>
+      <span ng-if="::options.glyph">
+        <fa name="{{::options.glyph}}" />
+      </span>Categories</h2>
+  </div> 
+  <ul class="list-group">
+    <li class="list-group-item" [ngClass]="{'active': c.data.category_id==''}"><a href="?id=home">All</a></li>
+    <li class="list-group-item" [ngClass]="{'active': c.data.category_id==category.sys_id}" ng-repeat = "category in c.data.categories" ><a href="?id={{c.data.page_id}}&cat_id={{category.sys_id}}">{{::category.name}} </a><span class="badge badge-montefiore">{{category.count}}</span></li>    
+
+</ul>
+<div class="">
+
+</div>  
+</div>]]></template>
+    </sp_widget>
+</record_update>

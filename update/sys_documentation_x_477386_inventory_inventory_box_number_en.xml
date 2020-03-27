@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="box_number" label="Box Number" language="en" table="x_477386_inventory_inventory">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>box_number</element>
+            <help/>
+            <hint/>
+            <label>Box Number</label>
+            <language>en</language>
+            <name>x_477386_inventory_inventory</name>
+            <plural>Box Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 06:21:35</sys_created_on>
+            <sys_id>6a48a2d5dbb30010f4bd5c7a4896194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Box Number</sys_name>
+            <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+            <sys_update_name>sys_documentation_x_477386_inventory_inventory_box_number_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 06:21:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

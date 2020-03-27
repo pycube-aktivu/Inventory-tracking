@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Transfer Order" max_length="40" name="x_477386_inventory_transfer_order_lines" type="collection">
+        <element label="Asset" mandatory="true" max_length="32" name="asset" reference="x_477386_inventory_asset" reference_qual="javascript:&quot;model=&quot;  +  current.model + &quot;^ install_status=&quot; +  6" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element label="Customer Name" max_length="32" name="customer_name" reference="sys_user" reference_qual="companyDYNAMIC34b9646ddbfb0010f4bd5c7a489619b1^EQ" reference_qual_condition="companyDYNAMIC34b9646ddbfb0010f4bd5c7a489619b1^EQ" type="reference"/>
+        <element label="Delivered date" max_length="40" name="delivered_date" read_only="true" type="glide_date_time"/>
+        <element label="Delivery by date" max_length="40" name="delivery_by_date" type="glide_date_time"/>
+        <element default="810ca421db3f0010f4bd5c7a489619a0" label="From stockroom" max_length="32" name="from_stockroom" read_only="true" reference="alm_stockroom" type="reference"/>
+        <element label="Model" mandatory="true" max_length="32" name="model" reference="x_477386_inventory_product_model" reference_qual="javascript:&quot;model_category=&quot; + current.model_category" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="encode_utf8=false,no_audit=true,readonly_clickthrough=true" label="Model Category" mandatory="true" max_length="32" name="model_category" reference="cmdb_model_category" type="reference"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Requested Date" max_length="40" name="requested_date" read_only="true" type="glide_date_time" use_dynamic_default="true"/>
+        <element choice="3" default="1" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="In transit" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Delivered" sequence="3" value="3"/>
+            </choice>
+        </element>
+        <element label="To stockroom" mandatory="true" max_length="32" name="to_stockroom" reference="alm_stockroom" reference_qual="type=a6aa2b3f3763100044e0bfc8bcbe5ddf^EQ" reference_qual_condition="type=a6aa2b3f3763100044e0bfc8bcbe5ddf^EQ" type="reference"/>
+        <index name="index">
+            <element name="to_stockroom"/>
+        </index>
+        <index name="index2">
+            <element name="model_category"/>
+        </index>
+        <index name="index3">
+            <element name="company"/>
+        </index>
+        <index name="index4">
+            <element name="model"/>
+        </index>
+        <index name="index5">
+            <element name="customer_name"/>
+        </index>
+        <index name="index6">
+            <element name="asset"/>
+        </index>
+        <index name="index7">
+            <element name="from_stockroom"/>
+        </index>
+    </element>
+</database>

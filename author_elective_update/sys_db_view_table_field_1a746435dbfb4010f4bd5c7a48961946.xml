@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="DELETE">
+        <field>number</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-27 10:02:52</sys_created_on>
+        <sys_id>1a746435dbfb4010f4bd5c7a48961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>number</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sys_db_view_table_field_1a746435dbfb4010f4bd5c7a48961946</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 10:02:52</sys_updated_on>
+        <table>x_477386_inventory_user_cart</table>
+        <view_table display_value="x_477386_inventory_user_cart">0ea2e8fddbbb4010f4bd5c7a489619cf</view_table>
+    </sys_db_view_table_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</application>
+        <file_path/>
+        <instance_id>bc3fda0cdbd9bb4052cec597059619b7</instance_id>
+        <instance_name>dev84871</instance_name>
+        <name>sys_db_view_table_field_1a746435dbfb4010f4bd5c7a48961946</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>number</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-27 10:02:52</sys_created_on><sys_id>1a746435dbfb4010f4bd5c7a48961946</sys_id><sys_mod_count>0</sys_mod_count><sys_name>number</sys_name><sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package><sys_policy/><sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope><sys_update_name>sys_db_view_table_field_1a746435dbfb4010f4bd5c7a48961946</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-27 10:02:52</sys_updated_on><table>x_477386_inventory_user_cart</table><view_table display_value="x_477386_inventory_user_cart">0ea2e8fddbbb4010f4bd5c7a489619cf</view_table></sys_db_view_table_field></record_update>]]></payload>
+        <payload_hash>-846862353</payload_hash>
+        <record_name>number</record_name>
+        <reverted_from/>
+        <source>228a1534db3b0010f4bd5c7a4896191e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-27 10:02:52</sys_created_on>
+        <sys_id>31842835dbfb4010f4bd5c7a48961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1711b71c3e50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 10:02:52</sys_updated_on>
+        <type>View Field</type>
+        <update_guid>798428356efb40102f54f6966ad88980</update_guid>
+        <update_guid_history>798428356efb40102f54f6966ad88980:-846862353</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-27 10:06:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table_field">sys_db_view_table_field</sys_db_object>
+        <sys_id>19459e6ad9f741c590738f421ba7ee09</sys_id>
+        <sys_metadata>1a746435dbfb4010f4bd5c7a48961946</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>number</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_parent display_value="x_477386_inventory_user_cart">0ea2e8fddbbb4010f4bd5c7a489619cf</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_scope_delete display_value="">52facfa2685449a8abf8da2fa524e240</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_field_1a746435dbfb4010f4bd5c7a48961946</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_field_1a746435dbfb4010f4bd5c7a48961946">31842835dbfb4010f4bd5c7a48961981</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 10:06:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

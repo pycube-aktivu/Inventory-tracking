@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Compatibles" section_id="28be0619db330010f4bd5c7a489619f8" sys_domain="global" table="x_477386_inventory_product_model" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>REL.cmdb_model.REL:603f83033723100044e0bfc8bcbe5de8</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 04:29:46</sys_created_on>
+            <sys_id>e4be0619db330010f4bd5c7a489619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Compatibles" display_value="Compatibles" name="x_477386_inventory_product_model" sys_domain="global" view="Default view">28be0619db330010f4bd5c7a489619f8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 04:29:46</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Compatibles</caption>
+            <header>false</header>
+            <name>x_477386_inventory_product_model</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 04:29:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28be0619db330010f4bd5c7a489619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Compatibles</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+            <sys_update_name>sys_ui_section_28be0619db330010f4bd5c7a489619f8</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 04:29:46</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</application>
+        <file_path/>
+        <instance_id>bc3fda0cdbd9bb4052cec597059619b7</instance_id>
+        <instance_name>dev84871</instance_name>
+        <name>sys_ui_section_28be0619db330010f4bd5c7a489619f8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Compatibles" section_id="28be0619db330010f4bd5c7a489619f8" sys_domain="global" table="x_477386_inventory_product_model" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>REL.cmdb_model.REL:603f83033723100044e0bfc8bcbe5de8</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 04:29:46</sys_created_on><sys_id>e4be0619db330010f4bd5c7a489619f9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Compatibles" display_value="Compatibles" name="x_477386_inventory_product_model" sys_domain="global" view="Default view">28be0619db330010f4bd5c7a489619f8</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 04:29:46</sys_updated_on><sys_user/><type>list</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Compatibles</caption><header>false</header><name>x_477386_inventory_product_model</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 04:29:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>28be0619db330010f4bd5c7a489619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Compatibles</sys_name><sys_overrides/><sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package><sys_policy/><sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope><sys_update_name>sys_ui_section_28be0619db330010f4bd5c7a489619f8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 04:29:46</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1452138514</payload_hash>
+        <record_name>Product Model</record_name>
+        <reverted_from/>
+        <source>228a1534db3b0010f4bd5c7a4896191e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 04:29:46</sys_created_on>
+        <sys_id>6cbe0619db330010f4bd5c7a489619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171151a6eab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 04:29:46</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>e4be06192b330010a599bacca4b559fa</update_guid>
+        <update_guid_history>e4be06192b330010a599bacca4b559fa:1452138514</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 17:37:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>0f1965baeb3e476892bdb67c654baf10</sys_id>
+        <sys_metadata>28be0619db330010f4bd5c7a489619f8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Compatibles</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_parent display_value="Product Model">790eca95db330010f4bd5c7a48961997</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_scope_delete display_value="">52facfa2685449a8abf8da2fa524e240</sys_scope_delete>
+        <sys_update_name>sys_ui_section_28be0619db330010f4bd5c7a489619f8</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_28be0619db330010f4bd5c7a489619f8">6cbe0619db330010f4bd5c7a489619fa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 17:37:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

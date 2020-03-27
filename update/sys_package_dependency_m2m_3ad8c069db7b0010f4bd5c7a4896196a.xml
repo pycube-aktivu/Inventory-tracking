@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System (apps/system_user)" source="apps/system_user">08578a11983100107f2c2ed01a1f163f</dependency>
+        <min_version/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 13:23:29</sys_created_on>
+        <sys_id>3ad8c069db7b0010f4bd5c7a4896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 13:23:29</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

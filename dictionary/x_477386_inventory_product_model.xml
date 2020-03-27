@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_model" label="Product Model" max_length="40" name="x_477386_inventory_product_model" type="collection">
+        <element label="Company" mandatory="true" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element label="Generated Number" max_length="40" name="generated_number" type="integer"/>
+        <element label="Product Category" max_length="32" name="model_category" reference="cmdb_model_category" reference_qual="javascript:&quot;x_477386_inventory_company=&quot; + current.company" type="reference" use_reference_qualifier="advanced"/>
+        <element default="javascript:global.generateModelNumber()" label="Model ID" max_length="40" name="model_id" read_only="true" type="string"/>
+        <element label="Prefix" max_length="50" name="prefix" type="string"/>
+        <element label="Unit per Box" mandatory="true" max_length="40" name="unit_per_box" type="integer"/>
+        <index name="index">
+            <element name="model_category"/>
+        </index>
+        <index name="index2">
+            <element name="company"/>
+        </index>
+    </element>
+</database>

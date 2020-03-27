@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Transfer Order" max_length="40" name="x_477386_inventory_transfer_order" type="collection">
+        <element label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element label="Customer Name" max_length="32" name="customer_name" reference="sys_user" type="reference"/>
+        <element label="Delivery by date" max_length="40" name="delivery_by_date" type="glide_date_time"/>
+        <element default="Pycube" label="From stockroom" max_length="32" name="from_stockroom" read_only="true" reference="alm_stockroom" type="reference"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Requested Date" max_length="40" name="requested_date" type="glide_date_time" use_dynamic_default="true"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="In transit" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Delivered" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="To stockroom" mandatory="true" max_length="32" name="to_stockroom" reference="alm_stockroom" reference_qual="type=a6aa2b3f3763100044e0bfc8bcbe5ddf^EQ" reference_qual_condition="type=a6aa2b3f3763100044e0bfc8bcbe5ddf^EQ" type="reference"/>
+        <index name="index">
+            <element name="to_stockroom"/>
+        </index>
+        <index name="index2">
+            <element name="company"/>
+        </index>
+        <index name="index3">
+            <element name="customer_name"/>
+        </index>
+        <index name="index4">
+            <element name="from_stockroom"/>
+        </index>
+    </element>
+</database>

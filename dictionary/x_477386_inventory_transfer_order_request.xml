@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Transfer Order Request " max_length="40" name="x_477386_inventory_transfer_order_request" sizeclass="2" type="collection">
+        <element label="Available Quantity" max_length="40" name="available_quantity" type="integer"/>
+        <element label="Customer Name" max_length="32" name="customer_name" reference="sys_user" type="reference"/>
+        <element label="From stockroom" mandatory="true" max_length="32" name="from_stockroom" reference="alm_stockroom" type="reference"/>
+        <element label="Items" max_length="4000" name="items" reference="x_477386_inventory_asset" type="glide_list"/>
+        <element dependent="model_category" dependent_on_field="model_category" label="Model" mandatory="true" max_length="32" name="model" reference="x_477386_inventory_product_model" reference_qual="javascript:&quot;model_category=&quot; + current.model_category" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element dependent="company" dependent_on_field="company" label="Model category" mandatory="true" max_length="32" name="model_category" reference="cmdb_model_category" reference_qual="javascript:&quot;x_477386_inventory_company=&quot; + current.company" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element label="Requested Quantity" mandatory="true" max_length="40" name="quantity" type="integer"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Requested Date" max_length="40" name="requested_date" read_only="true" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="To stockroom" mandatory="true" max_length="32" name="to_stockroom" reference="alm_stockroom" type="reference"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Phone" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Email" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Self-Service" sequence="2" value="3"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Inventory" max_length="40" name="x_477386_inventory_inventory" type="collection">
+        <element label="Box Number" max_length="50" name="box_number" type="string"/>
+        <element label="Company" mandatory="true" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element label="Expiry Date" max_length="40" name="expiry_date" type="glide_date"/>
+        <element dependent="model_category" dependent_on_field="model_category" label="Model" mandatory="true" max_length="32" name="model" reference="x_477386_inventory_product_model" reference_qual="javascript:&quot;model_category=&quot;  +  current.model_category" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Model Category" mandatory="true" max_length="32" name="model_category" reference="cmdb_model_category" reference_qual="javascript:&quot;x_477386_inventory_company=&quot; + current.company" type="reference" use_reference_qualifier="advanced"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Shipment Date" max_length="40" name="pickup_date" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="No. of Boxes" mandatory="true" max_length="40" name="quantity" type="integer"/>
+        <element default="810ca421db3f0010f4bd5c7a489619a0" label="Stockroom" max_length="32" name="stockroom" reference="alm_stockroom" type="reference"/>
+        <index name="index">
+            <element name="stockroom"/>
+        </index>
+        <index name="index2">
+            <element name="model_category"/>
+        </index>
+        <index name="index3">
+            <element name="company"/>
+        </index>
+        <index name="index4">
+            <element name="model"/>
+        </index>
+    </element>
+</database>

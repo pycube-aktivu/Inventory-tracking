@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic">
+    <sys_filter_option_dynamic action="DELETE">
+        <active>true</active>
+        <available_for_default>true</available_for_default>
+        <available_for_filter>true</available_for_filter>
+        <available_for_ref_qual>true</available_for_ref_qual>
+        <field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type>
+        <label>MyCompany</label>
+        <order/>
+        <roles/>
+        <script>gs.getUser().getCompanyID(); </script>
+        <script_reference_id/>
+        <script_reference_table/>
+        <sys_class_name>sys_filter_option_dynamic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 15:45:07</sys_created_on>
+        <sys_id>8129ec2ddbfb0010f4bd5c7a489619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MyCompany</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sys_filter_option_dynamic_8129ec2ddbfb0010f4bd5c7a489619ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 15:45:07</sys_updated_on>
+        <table/>
+        <table_containing_filter/>
+    </sys_filter_option_dynamic>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</application>
+        <file_path/>
+        <instance_id>bc3fda0cdbd9bb4052cec597059619b7</instance_id>
+        <instance_name>dev84871</instance_name>
+        <name>sys_filter_option_dynamic_8129ec2ddbfb0010f4bd5c7a489619ea</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic"><sys_filter_option_dynamic action="INSERT_OR_UPDATE"><active>true</active><available_for_default>true</available_for_default><available_for_filter>true</available_for_filter><available_for_ref_qual>true</available_for_ref_qual><field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type><label>MyCompany</label><order/><roles/><script>gs.getUser().getCompanyID(); </script><script_reference_id/><script_reference_table/><sys_class_name>sys_filter_option_dynamic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 15:45:07</sys_created_on><sys_id>8129ec2ddbfb0010f4bd5c7a489619ea</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MyCompany</sys_name><sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package><sys_policy/><sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope><sys_update_name>sys_filter_option_dynamic_8129ec2ddbfb0010f4bd5c7a489619ea</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 15:45:07</sys_updated_on><table/><table_containing_filter/></sys_filter_option_dynamic></record_update>]]></payload>
+        <payload_hash>-437227888</payload_hash>
+        <record_name>MyCompany</record_name>
+        <reverted_from/>
+        <source>228a1534db3b0010f4bd5c7a4896191e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 15:45:07</sys_created_on>
+        <sys_id>ed49e46ddbfb0010f4bd5c7a489619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1711784bebd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 15:45:07</sys_updated_on>
+        <type>Dynamic Filter Options</type>
+        <update_guid>2949e46d05fb001067c71e7de1fc58b4</update_guid>
+        <update_guid_history>2949e46d05fb001067c71e7de1fc58b4:-437227888</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 15:46:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_filter_option_dynamic">sys_filter_option_dynamic</sys_db_object>
+        <sys_id>048c4134315e479084013ac62cf4e440</sys_id>
+        <sys_metadata>8129ec2ddbfb0010f4bd5c7a489619ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MyCompany</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_scope_delete display_value="">52facfa2685449a8abf8da2fa524e240</sys_scope_delete>
+        <sys_update_name>sys_filter_option_dynamic_8129ec2ddbfb0010f4bd5c7a489619ea</sys_update_name>
+        <sys_update_version display_value="sys_filter_option_dynamic_8129ec2ddbfb0010f4bd5c7a489619ea">ed49e46ddbfb0010f4bd5c7a489619b4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 15:46:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

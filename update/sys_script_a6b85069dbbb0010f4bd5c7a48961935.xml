@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_477386_inventory_asset</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Asset Tag</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var model = current.model;
+	var model_category = current.model_category; 
+
+	//get Category details
+	var grc = new GlideRecord("cmdb_model_category");
+	//grc.addQuery("u_category_id",'!=',''); 
+	grc.addQuery("sys_id",model_category); 
+	grc.query(); 
+	var catId = '#001-#001';
+	if(grc.next()){
+		catId = grc.x_477386_inventory_category_id; 
+	}
+	//get product details
+	var gr = new GlideRecord("x_477386_inventory_product_model");
+	//gr.addQuery("u_model_id",'!=',''); 
+	gr.addQuery("sys_id",model); 
+	gr.query(); 
+	var modelId = '#001';
+	if(gr.next()){		
+		modelId = gr.model_id;  
+	}
+	
+	//get parcel details
+	var generated_number = 1;
+	var result = '';
+	var prefixCat = catId+'-'+modelId;
+	var prefix =  '';
+	
+		//if parcel doesn't exist
+		var gDate = new GlideDate(); 
+		var gDT = new GlideDateTime(gDate); 
+		var year=gDT.getYearUTC().toString();
+		prefix = year.slice(2);
+		prefixCat = prefixCat+'-'+prefix;
+		result =  '0001';
+		var gra = new GlideRecord("x_477386_inventory_asset");
+		gra.addQuery("generated_number",'!=',''); 
+		gra.addQuery("company",current.company);
+		gra.addQuery("prefix",prefix);
+		gra.orderByDesc("generated_number");
+		gra.query(); 
+		if(gra.next()){
+			generated_number = gra.generated_number+1;
+		}
+		result = global.generateNumber(generated_number,4);	
+	//gs.addErrorMessage(prefixCat+'-'+result);
+	
+	
+	var grm = new GlideRecord("x_477386_inventory_asset");
+	grm.addQuery("sys_id",current.sys_id); 
+	grm.query();  
+	if(grm.next()){
+		grm.asset_tag = prefixCat+'-'+result;
+		grm.asset_id = prefix+'-'+result;
+		grm.prefix = prefix;
+		grm.box_number = result;
+		grm.generated_number = generated_number;
+		grm.update();
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 14:40:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a6b85069dbbb0010f4bd5c7a48961935</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Update Asset Tag</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sys_script_a6b85069dbbb0010f4bd5c7a48961935</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 18:25:54</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a6b85069dbbb0010f4bd5c7a48961935"/>
+</record_update>

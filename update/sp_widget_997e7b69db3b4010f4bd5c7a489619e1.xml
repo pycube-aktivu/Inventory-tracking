@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+    /* widget controller */
+    var c = this;
+    console.log(c.data.cart_model_sys_id);
+    console.log(c.data.cart_models);
+    console.log(c.data.cart_assets);
+    c.addAsset = function(asset_id, model_id, cat_sys_id) {
+        c.data.action = "addAsset";
+        c.data.asset_id = asset_id;
+        c.data.model_id = model_id;
+        c.data.cat_sys_id = cat_sys_id;
+        c.server.update().then(function() {
+            c.data.action = undefined;
+        });
+
+    };
+    c.checkButton = function(asset_sys_id) {
+        if (c.data.cart_assets.indexOf(asset_sys_id) !== -1) {
+            return false;
+        }
+        return true;
+    };
+
+    c.getModelQuantity = function(model_sys_id) {
+        for(var i=0; i<c.data.cart_models.length; i++) {
+            if (c.data.cart_models[i].sys_id == model_sys_id) {
+                return c.data.cart_models[i].count;
+            } else {
+                return 0;
+            }
+        }
+
+    };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css> .card-custom-check{&#13;
+      border-radius: 5px;&#13;
+      padding: 0;&#13;
+      border: 0px solid transparent;&#13;
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);&#13;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);&#13;
+      position: relative;&#13;
+      display: -ms-flexbox;&#13;
+      display: flex;&#13;
+      -ms-flex-direction: column;&#13;
+      flex-direction: column;&#13;
+      min-width: 0;&#13;
+      word-wrap: break-word;&#13;
+      background-color: #fff;&#13;
+      background-clip: border-box;&#13;
+      border: 1px solid rgba(0,0,0,.125);&#13;
+      border-radius: .25rem;&#13;
+      height: 100%;&#13;
+      margin-bottom: 10px;&#13;
+    }&#13;
+    .card-custom-check .card-body-check {&#13;
+      float: left;&#13;
+      padding: 10px;&#13;
+      position: relative;&#13;
+      width: 100%;&#13;
+    }&#13;
+    .checkmark {&#13;
+     position: absolute;&#13;
+     top: -9px;&#13;
+     right: -9px;&#13;
+     height: 25px;&#13;
+     width: 25px;&#13;
+     background-color: transparent;&#13;
+     border-radius: 15px;&#13;
+   }&#13;
+&#13;
+   .main-container:hover input ~ .checkmark {&#13;
+    background-color: transparent;&#13;
+  }&#13;
+&#13;
+  .main-container input:checked ~ .checkmark {&#13;
+    background-color: #2196F3;&#13;
+  }&#13;
+&#13;
+  .checkmark:after {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    display: none;&#13;
+  }&#13;
+&#13;
+  .main-container input:checked ~ .checkmark:after {&#13;
+    display: block;&#13;
+  }&#13;
+&#13;
+  .main-container .checkmark:after {&#13;
+    left: 9px;&#13;
+    top: 5px;&#13;
+    width: 8px;&#13;
+    height: 12px;&#13;
+    border: solid white;&#13;
+    border-width: 0 3px 3px 0;&#13;
+    -webkit-transform: rotate(45deg);&#13;
+    -ms-transform: rotate(45deg);&#13;
+    transform: rotate(45deg);&#13;
+  }&#13;
+  .default_input{&#13;
+    display: none;&#13;
+  }&#13;
+  .card-custom-check h4{&#13;
+    font-size: 14px;&#13;
+    margin: 0px 0px 0px;&#13;
+    font-family: 'Open Sans', sans-serif;&#13;
+    color: #03a9f3;&#13;
+    font-size: 13px;&#13;
+  }&#13;
+  .custom-line-hr{&#13;
+    border-top: 1px solid #d9d9da;&#13;
+    margin: 10px 0px;&#13;
+  }&#13;
+  .custom-table{&#13;
+    font-weight: 300;&#13;
+    margin-bottom: 0px;&#13;
+    font-family: 'Open Sans', sans-serif;&#13;
+    font-size: 13px;&#13;
+  }&#13;
+  .custom-table&gt;tbody&gt;tr&gt;td{&#13;
+    border-top: none;&#13;
+    padding: 0px;&#13;
+    padding-bottom: 8px;&#13;
+  }&#13;
+  .main_asset_heading_new{&#13;
+    font-family: 'Open Sans', sans-serif;&#13;
+    color: #1d3c69;&#13;
+    margin: 10px 0px;&#13;
+    font-size: 24px;&#13;
+  }&#13;
+  .main_asset_heading_new span{&#13;
+    color: #ffffff;&#13;
+    float: right;&#13;
+    background: #03a9f3;&#13;
+    padding: 3px 15px;&#13;
+    border-radius: 25px;&#13;
+  }&#13;
+.custom-btn{&#13;
+    border: none;&#13;
+    padding: 5px 15px;&#13;
+    margin: 5px 0px 0px;&#13;
+    background: #23416d;&#13;
+}&#13;
+.custom-btn:active:hover, .custom-btn:active:focus, .custom-btn.focus:active, .custom-btn.active:hover, .custom-btn.active:focus, .custom-btn.active.focus, .open &gt; .custom-btn.dropdown-toggle:hover, .open &gt; .custom-btn.dropdown-toggle:focus, .open &gt; .custom-btn.dropdown-toggle.focus {&#13;
+background: #23416d;&#13;
+    background-color: #23416d;&#13;
+    border-color: #23416d;&#13;
+}&#13;
+.carticon{&#13;
+    margin-right: 5px;&#13;
+    font-size: 15px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>list_of_assets</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>List of assets</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+    // Asset State 6=>Instorage
+    var asset_state = '6';
+    data.asset_list = [];
+
+    data.cart_assets = [];
+    data.cart_models = [];
+    data.cart_model_sys_id = [];
+
+    var currentUser = gs.getUser();
+    data.company_id = currentUser.getCompanyID();
+
+    var catalog_id = $sp.getParameter("cat_id") ? $sp.getParameter("cat_id") + "" : "";
+
+    var gr_model = new GlideAggregate('x_477386_inventory_asset');
+    gr_model.addAggregate('SUM', 'quantity');
+    if (data.company_id != '') {
+        gr_model.addQuery("company", data.company_id);
+    }
+    if (catalog_id != '') {
+        gr_model.addQuery("model_category", catalog_id);
+    }
+    if (asset_state != '') {
+        gr_model.addQuery("install_status", asset_state);
+    }
+    gr_model.groupBy('model');
+    gr_model.query();
+    while (gr_model.next()) {
+        var model_list = {};
+        model_list.count = gr_model.getAggregate('SUM', 'quantity');
+        model_list.name = gr_model.model.getDisplayValue();
+        model_list.sys_id = gr_model.model.sys_id.getDisplayValue();
+        model_list.cat_sys_id = gr_model.model_category.sys_id.getDisplayValue();
+        data.cart_model_sys_id.push(model_list.sys_id);
+        model_list.assets = [];
+
+        var gr_asset = new GlideRecord("x_477386_inventory_asset");
+        gr_asset.addQuery("model", model_list.sys_id);
+        if (data.company_id != '') {
+            gr_asset.addQuery("company", data.company_id);
+        }
+        if (catalog_id != '') {
+            gr_asset.addQuery("model_category", catalog_id);
+        }
+        if (asset_state != '') {
+            gr_asset.addQuery("install_status", asset_state);
+        }
+        gr_asset.query();
+        while (gr_asset.next()) {
+            var asset_data = {};
+            asset_data.sys_id = gr_asset.sys_id.getDisplayValue();
+            asset_data.quantity = gr_asset.quantity.getDisplayValue();
+            asset_data.display_name = gr_asset.display_name.getDisplayValue();
+            asset_data.expiry_date = gr_asset.expiry_date.getDisplayValue();
+            asset_data.install_date = gr_asset.install_date.getDisplayValue();
+            model_list.assets.push(asset_data);
+        }
+        data.asset_list.push(model_list);
+    }
+
+    
+        var gr_cart = new GlideAggregate('x_477386_inventory_user_cart');
+        gr_cart.addAggregate('SUM', 'quantity'); //product_model
+        gr_cart.addQuery('product_model', "IN", data.cart_model_sys_id.join());
+        gr_cart.addQuery('user', gs.getUserID());
+        gr_cart.groupBy("product_model");
+        gr_cart.query();
+        while (gr_cart.next()) {
+            var cart_model_data = {};
+            cart_model_data.count = gr_cart.getAggregate('SUM', 'quantity');
+            cart_model_data.sys_id = gr_cart.product_model.sys_id.getDisplayValue();
+            data.cart_models.push(cart_model_data);
+			var gr_cart_asset = new GlideRecord('x_477386_inventory_user_cart');
+			gr_cart_asset.addQuery("product_model", cart_model_data.sys_id);
+			gr_cart_asset.addQuery('user', gs.getUserID());
+			gr_cart_asset.query();
+			while(gr_cart_asset.next()){
+				data.cart_assets.push(gr_cart_asset.asset.sys_id.getDisplayValue());
+			}
+        }
+    
+    
+    if (input) {
+        if (input.action == "addAsset") {
+            var gr = new GlideRecord('x_477386_inventory_user_cart');
+            gr.initialize();
+            gr.asset = input.asset_id;
+            gr.product_model = input.model_id;
+            gr.model_category = input.cat_sys_id;
+            gr.user = gs.getUserName();
+            gr.insert();
+        }
+    }
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-27 07:16:49</sys_created_on>
+        <sys_id>997e7b69db3b4010f4bd5c7a489619e1</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>List of assets</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sp_widget_997e7b69db3b4010f4bd5c7a489619e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 13:28:05</sys_updated_on>
+        <template><![CDATA[<div ng-repeat = "model in c.data.asset_list">
+<!-- your widget template -->
+  <div class="row">
+      <div class="col-sm-12">
+        <h2 class="main_asset_heading_new">
+          {{model.name}}<span>{{model.count}}</span>
+        </h2>
+        <h4 >
+          Added to cart (Quantity): <strong>{{c.getModelQuantity(model.sys_id)}}</strong> 
+        </h4>
+        <hr class="custom-line-hr">
+      </div>
+    </div>
+    <div class="row main-container">
+      <div class="col-sm-3" ng-repeat = "asset in model.assets">
+        <label class="card-custom-check" ><!--for="{{asset.sys_id}}"-->
+          <div class="card-body-check">
+            <!--<input type="checkbox" id="{{asset.sys_id}}" class="default_input">
+            <span class="checkmark"></span>-->
+            <h4>{{asset.display_name}}</h4>
+            <hr class="custom-line-hr">
+            <table class="table custom-table">
+              <tbody>
+                <tr>
+                  <td>Quantity</td>
+                  <td class="text-right">{{asset.quantity}}</td>
+                </tr>
+                <tr>
+                  <td>Shipping Date</td>
+                  <td class="text-right">{{asset.install_date}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cart-button text-center">
+              <button type="submit" ng-if="c.checkButton(asset.sys_id)" ng-click="c.addAsset(asset.sys_id, model.sys_id, model.cat_sys_id)" class="button btn-primary btn-sm custom-btn"><i class="fa fa-shopping-cart carticon" aria-hidden="true"></i> Add To Cart</button>
+              <button  ng-if="!c.checkButton(asset.sys_id)" disabled  class="button btn-info btn-sm"><i class="fa fa-shopping-cart carticon" aria-hidden="true"></i> Added To Cart</button>
+            </div>
+          </div>
+        </label>
+      </div>      
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="INSERT_OR_UPDATE">
+        <field>sys_id</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-27 10:04:15</sys_created_on>
+        <sys_id>c7c46c35dbfb4010f4bd5c7a48961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_id</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sys_db_view_table_field_c7c46c35dbfb4010f4bd5c7a48961900</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 10:04:15</sys_updated_on>
+        <table>x_477386_inventory_asset</table>
+        <view_table display_value="x_477386_inventory_asset">5092a4b1dbfb4010f4bd5c7a489619c4</view_table>
+    </sys_db_view_table_field>
+</record_update>

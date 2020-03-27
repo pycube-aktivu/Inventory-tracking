@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>cart-arrow-down</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Cart</label>
+        <order>1000</order>
+        <record_script><![CDATA[var t = data;
+t.items = [];
+t.count = 0;
+
+var link = {};
+link.title = gs.getMessage('View all approvals');
+link.type = 'link';
+link.href = '?id=approvals';
+link.items = [];
+t.items.push(link);]]></record_script>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="cart">ee2ca03ddbfb4010f4bd5c7a48961933</sp_page>
+        <sp_rectangle_menu display_value="Header Main Menu">b4ff3f9ddb3b0010f4bd5c7a48961923</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-27 08:36:20</sys_created_on>
+        <sys_id>94a0987ddb7b4010f4bd5c7a48961971</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Cart</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_94a0987ddb7b4010f4bd5c7a48961971</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 10:54:54</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=94a0987ddb7b4010f4bd5c7a48961971"/>
+</record_update>

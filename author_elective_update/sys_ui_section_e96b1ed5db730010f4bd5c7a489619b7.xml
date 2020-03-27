@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Financial" section_id="e96b1ed5db730010f4bd5c7a489619b7" sys_domain="global" table="x_477386_inventory_asset" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>616b1ed5db730010f4bd5c7a489619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>e56b1ed5db730010f4bd5c7a489619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_line</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>6d6b1ed5db730010f4bd5c7a489619b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>unit_cost</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>e16b1ed5db730010f4bd5c7a489619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>696b1ed5db730010f4bd5c7a489619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>ed6b1ed5db730010f4bd5c7a489619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_line.opened_at</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>656b1ed5db730010f4bd5c7a489619bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gl_account</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>e96b1ed5db730010f4bd5c7a489619bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost_center</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_id>616b1ed5db730010f4bd5c7a489619bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Financial</caption>
+            <header>false</header>
+            <name>x_477386_inventory_asset</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e96b1ed5db730010f4bd5c7a489619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Financial</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+            <sys_update_name>sys_ui_section_e96b1ed5db730010f4bd5c7a489619b7</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</application>
+        <file_path/>
+        <instance_id>bc3fda0cdbd9bb4052cec597059619b7</instance_id>
+        <instance_name>dev84871</instance_name>
+        <name>sys_ui_section_e96b1ed5db730010f4bd5c7a489619b7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Financial" section_id="e96b1ed5db730010f4bd5c7a489619b7" sys_domain="global" table="x_477386_inventory_asset" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>vendor</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>616b1ed5db730010f4bd5c7a489619b9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>invoice_number</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>e56b1ed5db730010f4bd5c7a489619b9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>request_line</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>6d6b1ed5db730010f4bd5c7a489619b9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>unit_cost</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>e16b1ed5db730010f4bd5c7a489619ba</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cost</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>696b1ed5db730010f4bd5c7a489619ba</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>ed6b1ed5db730010f4bd5c7a489619ba</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>request_line.opened_at</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>656b1ed5db730010f4bd5c7a489619bb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>gl_account</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>e96b1ed5db730010f4bd5c7a489619bb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cost_center</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_id>616b1ed5db730010f4bd5c7a489619bc</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Financial" display_value="Financial" name="x_477386_inventory_asset" sys_domain="global" view="Default view">e96b1ed5db730010f4bd5c7a489619b7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Financial</caption><header>false</header><name>x_477386_inventory_asset</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 05:25:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e96b1ed5db730010f4bd5c7a489619b7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Financial</sys_name><sys_overrides/><sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package><sys_policy/><sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope><sys_update_name>sys_ui_section_e96b1ed5db730010f4bd5c7a489619b7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 05:25:16</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1254299927</payload_hash>
+        <record_name>Asset</record_name>
+        <reverted_from/>
+        <source>228a1534db3b0010f4bd5c7a4896191e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 05:25:16</sys_created_on>
+        <sys_id>e16b1ed5db730010f4bd5c7a489619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171154d3f6d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 05:25:16</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>6d6b1ed531730010c7ef3912cd3250bd</update_guid>
+        <update_guid_history>6d6b1ed531730010c7ef3912cd3250bd:1254299927</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 17:52:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>06ea2ba18d9e4b00ad105afe37c11640</sys_id>
+        <sys_metadata>e96b1ed5db730010f4bd5c7a489619b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Financial</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_parent display_value="Asset">7a801699db330010f4bd5c7a4896195b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_scope_delete display_value="">52facfa2685449a8abf8da2fa524e240</sys_scope_delete>
+        <sys_update_name>sys_ui_section_e96b1ed5db730010f4bd5c7a489619b7</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_e96b1ed5db730010f4bd5c7a489619b7">e16b1ed5db730010f4bd5c7a489619be</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 17:52:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

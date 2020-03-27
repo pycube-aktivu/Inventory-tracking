@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Asset Categories">58cb25bcdb7b0010f4bd5c7a4896193b</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>New Product Category </mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>10</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>cmdb_model_category.do?sysparm_view=inventory&amp;sys_id=-1&amp;sysparm_query=active=true&amp;sysparm_stack=cmdb_model_category_list.do?sysparm_query=u_category_idISNOTEMPTY  </query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-24 12:41:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10eba5bcdb7b0010f4bd5c7a489619a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>New Product Category </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sys_app_module_10eba5bcdb7b0010f4bd5c7a489619a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-24 12:42:57</sys_updated_on>
+        <timeline_page/>
+        <title>New Product Category </title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

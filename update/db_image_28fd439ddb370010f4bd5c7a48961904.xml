@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <format/>
+        <height/>
+        <image>8e1e0b5ddb370010f4bd5c7a489619e7</image>
+        <name>items.svg</name>
+        <size_bytes>3033</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 09:06:34</sys_created_on>
+        <sys_id>28fd439ddb370010f4bd5c7a48961904</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>items.svg</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>db_image_28fd439ddb370010f4bd5c7a48961904</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 09:06:46</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash>6c18fc697037b5c4575d7ec1f7ac5176ed6f1030ebe222dbe34287bf5a6ad215</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>3033</size_bytes>
+        <size_compressed>934</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 09:06:46</sys_created_on>
+        <sys_id>8e1e0b5ddb370010f4bd5c7a489619e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-03-26 09:06:47</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>28fd439ddb370010f4bd5c7a48961904</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="8e1e0b5ddb370010f4bd5c7a489619e7">8e1e0b5ddb370010f4bd5c7a489619e7</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 09:06:46</sys_created_on>
+        <sys_id>ce1e0b5ddb370010f4bd5c7a489619e7</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>vVbLbus2EN0X6D8I6qYFqDFn+BiyiAukm95FAnTlRTaFcONYBuQkSNz4fn6HD7uxowRNctHNjESdIc88qbPHp1XzbTPePs7bYbu9/3U22+12sDNw97CakdZ6Joi22a2vt8O8tRSADLfNsFyvhu28dUht87Re7n6/+zZvdaObCmnSl99+/KFpzlbN+nrerrfLzWPbbB/628ebu4fNvM2PY79d/txZhBDol2JwMPnj4e7v+7/Its11v+27236zrIuNLFbsKdpMoc2/aMHf99shm/wpD6f7p7Umr83bS2stOIwKGbTnoSMHfhHAGdNnqYrUCpXuMsgr/ZQXhw41gf0OaD2BTkT6JCioqgowveSVBWkL4eXBar/VwhJ4zwlhrSpSZ0xGd+WkvJUjYDb9Ye/TnYwFFGxxIYPp+4Kzu68QLXJhgwf7EtM9wwyd0Qz0GqjIhfEe4ptJqGdNhF8dHBnKUa9hSiWVDJxPgY4r7+oSGcE6UsGBmaino6Sdn1KX70fmVxvECNaz0u/eiaKGKMQ+v5NFDSb4/U5tc7Mex3n7kzZ9vDHt7I2WdRMt60rL7j1FjkBfgeQosB1oHSXqoAkzz8INa7A9EGFnwEQac3ZK2U2VgAHvpFeBLI2duM6KxNqbtIY6FlXajlSR1ZJy8RR1gd6Bzen1wCk2lM+heo468uJdofETofE1NDaAcUYKzYAbS2XVAkuEMagi90HR4jaBex7E8Nkg4n8P4vmLIKojD94VFp4IC5ewkEFAqUNkndrxiyWW2E9k/zACvlSTKUidXe8iFybIhWNy5G065ePk8KPk4gS5eEzOuAD2/6dm9Etqee0ZNWkiqaxPJPXD5HCCHNZG9AxMVhkrQ4lxTK0TcwPFk8mRL8M8MuoAGTvpS6Yie7mq2IllUQdvGGMn94e/CAFkYotlsPK74MFId1d1ADsnE9oE+7UDJ71tQgeR5Ql96GQIcZRHDoPuJYJeSFVV7V3CKQs27YuB96p8tqU8yldnea/KV2ATlPEQOI7CkcVMRkNw5Vb2Wu6VoGRQOu3PJWIop1ZVO+04jFeXHmV+icOGxSHJkPjmVJHlypEsokyZNNp4TGNNMFbOK7JghA854axLYqyXFfZ84eW/lqURJbCMeLWRagmc4EZMnSjlsRcmrFlVVe9eCX+KmuzqNGjHe1X+PSjli1MkhfeFzPsgqSQn+Lfq7Wy22v8s16eiz9L/uuh/ALAlzSvZCwAA</data>
+        <length>1232</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="8e1e0b5ddb370010f4bd5c7a489619e7">8e1e0b5ddb370010f4bd5c7a489619e7</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 09:06:46</sys_created_on>
+        <sys_id>421e0b5ddb370010f4bd5c7a489619e8</sys_id>
+    </sys_attachment_doc>
+</record_update>

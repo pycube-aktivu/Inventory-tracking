@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="User Cart" max_length="40" name="x_477386_inventory_user_cart" type="collection">
+        <element dependent="product_model" dependent_on_field="product_model" label="Asset" max_length="32" name="asset" reference="x_477386_inventory_asset" type="reference" use_dependent_field="true"/>
+        <element label="Model Category" max_length="32" name="model_category" reference="cmdb_model_category" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element dependent="model_category" dependent_on_field="model_category" label="Product Model" max_length="32" name="product_model" reference="x_477386_inventory_product_model" type="reference" use_dependent_field="true"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="model_category"/>
+        </index>
+        <index name="index2">
+            <element name="asset"/>
+        </index>
+        <index name="index3">
+            <element name="user"/>
+        </index>
+        <index name="index4">
+            <element name="product_model"/>
+        </index>
+    </element>
+</database>

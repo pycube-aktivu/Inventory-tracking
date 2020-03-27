@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+    /* widget controller */
+    var c = this;
+    
+    var config = {
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: c.data.item_count,
+                backgroundColor: ["red", "orange","yellow","green","blue"],
+                label: 'Dataset 1'
+            }],
+            labels: c.data.item_label
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'bottom',
+            },
+            title: {
+                display: true,
+                text: 'By State'
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+        }
+    };
+	new Chart('canvas', config);
+	
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>items_by_state</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Items By State</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+	data.item_count = [];
+	data.item_label = [];
+	data.total_count = 0;
+    var currentUser = gs.getUser();
+    data.company_id = currentUser.getCompanyID();
+
+    var catalog_id = $sp.getParameter("cat_id") ? $sp.getParameter("cat_id") + "" : "";
+
+    var totalCostSum = new GlideAggregate('x_477386_inventory_asset');
+    totalCostSum.addAggregate('SUM', 'quantity');
+    if (data.company_id != '') {
+        totalCostSum.addQuery("company", data.company_id);
+    }
+	if (catalog_id != '') {
+        totalCostSum.addQuery("model_category", catalog_id);
+    }	
+    totalCostSum.groupBy('install_status');
+    totalCostSum.query();
+    while (totalCostSum.next()) { // in case there is no result        
+        data.item_count.push(totalCostSum.getAggregate('SUM', 'quantity'));
+		data.item_label.push(totalCostSum.install_status.getDisplayValue());
+    }
+	if(data.total_count == ""){
+		data.total_count = 0;
+	}
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 13:13:20</sys_created_on>
+        <sys_id>06860c65db7b0010f4bd5c7a489619f0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Items By State</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sp_widget_06860c65db7b0010f4bd5c7a489619f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 13:24:46</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <div class="card-custom">
+    <div class="card-body">
+  <div id="canvas-holder">
+		<canvas id="canvas"></canvas>
+	</div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
