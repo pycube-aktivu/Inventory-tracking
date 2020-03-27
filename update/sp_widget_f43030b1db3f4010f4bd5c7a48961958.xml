@@ -69,14 +69,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-27 10:54:08</sys_created_on>
         <sys_id>f43030b1db3f4010f4bd5c7a48961958</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Cart Assets</sys_name>
         <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
         <sys_update_name>sp_widget_f43030b1db3f4010f4bd5c7a48961958</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 13:42:49</sys_updated_on>
+        <sys_updated_on>2020-03-27 13:44:11</sys_updated_on>
         <template><![CDATA[<div ng-repeat = "model in c.data.cart_list">
 <div class="card-custom">
   <div class="card-body">
@@ -84,7 +84,7 @@
 <!-- your widget template -->
   <h4>{{model.name}}</h4>
   <table class="table table-striped">
-  <caption>{{model.name}} - {{model.count}}</caption>
+  <caption>Selected Quantity: {{model.count}}</caption>
   <thead>
     <tr>
       <th scope="col">#</th>
