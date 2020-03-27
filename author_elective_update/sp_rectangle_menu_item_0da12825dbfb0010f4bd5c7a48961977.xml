@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="DELETE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>truck</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Delivery Request</label>
+        <order>200</order>
+        <record_script/>
+        <sc_cat_item display_value="Delivery Request">8e856799dbb70010f4bd5c7a48961959</sc_cat_item>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="delivery_request">02a064e1dbfb0010f4bd5c7a48961931</sp_page>
+        <sp_rectangle_menu display_value="Header Main Menu">b4ff3f9ddb3b0010f4bd5c7a48961923</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 15:12:15</sys_created_on>
+        <sys_id>0da12825dbfb0010f4bd5c7a48961977</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Delivery Request</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_0da12825dbfb0010f4bd5c7a48961977</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 15:16:02</sys_updated_on>
+        <table/>
+        <type>sc_cat_item</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="DELETE" query="documentkey=0da12825dbfb0010f4bd5c7a48961977"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</application>
+        <file_path/>
+        <instance_id>bc3fda0cdbd9bb4052cec597059619b7</instance_id>
+        <instance_name>dev84871</instance_name>
+        <name>sp_rectangle_menu_item_0da12825dbfb0010f4bd5c7a48961977</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph>truck</glyph><hint/><kb_article/><kb_category/><kb_topic/><label>Delivery Request</label><order>200</order><record_script/><sc_cat_item display_value="Delivery Request">8e856799dbb70010f4bd5c7a48961959</sc_cat_item><sc_category/><short_description/><sp_page display_value="delivery_request">02a064e1dbfb0010f4bd5c7a48961931</sp_page><sp_rectangle_menu display_value="Header Main Menu">b4ff3f9ddb3b0010f4bd5c7a48961923</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-26 15:12:15</sys_created_on><sys_id>0da12825dbfb0010f4bd5c7a48961977</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Delivery Request</sys_name><sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package><sys_policy/><sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope><sys_update_name>sp_rectangle_menu_item_0da12825dbfb0010f4bd5c7a48961977</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-26 15:16:02</sys_updated_on><table/><type>sc_cat_item</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=0da12825dbfb0010f4bd5c7a48961977"/></record_update>]]></payload>
+        <payload_hash>332690138</payload_hash>
+        <record_name>Delivery Request</record_name>
+        <reverted_from/>
+        <source>228a1534db3b0010f4bd5c7a4896191e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-26 15:16:02</sys_created_on>
+        <sys_id>5f922c65dbfb0010f4bd5c7a48961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171176a1c940000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-26 15:16:02</sys_updated_on>
+        <type>Menu Item</type>
+        <update_guid>d7922c655bfb00103fb2ffe85d20a541</update_guid>
+        <update_guid_history>d7922c655bfb00103fb2ffe85d20a541:332690138,ccc16c2520fb0010a2de2c3e6569c379:-1556683741</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Delivery Request">94c66539dbff4010f4bd5c7a4896195f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-27 14:52:13</sys_created_on>
+        <sys_db_object display_value="" name="sp_rectangle_menu_item">sp_rectangle_menu_item</sys_db_object>
+        <sys_id>0367fc263a6349a88271deb7b9d4f9b9</sys_id>
+        <sys_metadata>0da12825dbfb0010f4bd5c7a48961977</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delivery Request</sys_name>
+        <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
+        <sys_scope_delete display_value="">52facfa2685449a8abf8da2fa524e240</sys_scope_delete>
+        <sys_update_name>sp_rectangle_menu_item_0da12825dbfb0010f4bd5c7a48961977</sys_update_name>
+        <sys_update_version display_value="sp_rectangle_menu_item_0da12825dbfb0010f4bd5c7a48961977">5f922c65dbfb0010f4bd5c7a48961941</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-27 14:52:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

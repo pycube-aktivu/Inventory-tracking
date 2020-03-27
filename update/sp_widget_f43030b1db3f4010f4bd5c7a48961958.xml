@@ -2,10 +2,20 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[function() {
-  /* widget controller */
-  var c = this;
-	console.log(c.data.cart_list);
+    /* widget controller */
+    var c = this;
+    c.deleteCart = function(cart_sys_id) {
+        c.data.action = "deleteCart";
+        c.data.cart_sys_id = cart_sys_id;
+        c.server.update().then(function() {
+            c.data.action = undefined;
+			alert("Deleted");
+        });
+
+    };
 	
+
+
 }]]></client_script>
         <controller_as>c</controller_as>
         <css/>
@@ -25,43 +35,55 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
 
     data.cart_list = [];
-	
-	var currentUser = gs.getUser();
+
+    var currentUser = gs.getUser();
     data.company_id = currentUser.getCompanyID();
-	
-	var gr = new GlideAggregate('x_477386_inventory_user_cart');
-	gr.addAggregate('SUM', 'quantity'); //product_model
-	gr.addQuery('user', gs.getUserID());
+
+    var gr = new GlideAggregate('x_477386_inventory_user_cart');
+    gr.addAggregate('SUM', 'quantity'); //product_model
+    gr.addQuery('user', gs.getUserID());
     gr.groupBy('product_model');
     gr.query();
-	while (gr.next()) {
+    while (gr.next()) {
         var model_list = {};
-		model_list.count = gr.getAggregate('SUM', 'quantity');
+        model_list.count = gr.getAggregate('SUM', 'quantity');
         model_list.name = gr.product_model.getDisplayValue();
-		model_list.sys_id = gr.product_model.sys_id.getDisplayValue();
+        model_list.sys_id = gr.product_model.sys_id.getDisplayValue();
         model_list.assets = [];
         var gr_asset = new GlideRecord('x_477386_inventory_user_cart');
-		gr_asset.addQuery("product_model", model_list.sys_id);
-		gr_asset.addQuery('user', gs.getUserID());
+        gr_asset.addQuery("product_model", model_list.sys_id);
+        gr_asset.addQuery('user', gs.getUserID());
         gr_asset.query();
-        while (gr_asset.next()) {			
-			var asset_data = {};
-			var total_count =0;
-			asset_data.sys_id = gr_asset.asset.sys_id.getDisplayValue();
-			asset_data.quantity = gr_asset.quantity.getDisplayValue();
-			asset_data.display_name = gr_asset.asset.getDisplayValue();
-	
-			model_list.assets.push(asset_data);
+        while (gr_asset.next()) {
+            var asset_data = {};
+            var total_count = 0;
+            asset_data.cart_sys_id = gr_asset.sys_id.getDisplayValue();
+            asset_data.sys_id = gr_asset.asset.sys_id.getDisplayValue();
+            asset_data.quantity = gr_asset.quantity.getDisplayValue();
+            asset_data.display_name = gr_asset.asset.getDisplayValue();
+
+            model_list.assets.push(asset_data);
         }
-		data.cart_list.push(model_list);
+        data.cart_list.push(model_list);
     }
-	
 
 
+    if (input) {
+        if (input.action == "deleteCart") {
+            var rec = new GlideRecord('x_477386_inventory_user_cart');
+            rec.addQuery('sys_id', input.cart_sys_id);
+            rec.query();
+            while (rec.next()) {
+                rec.deleteRecord();
+            }
+        }
+    }
+
+    
 
 })();]]></script>
         <servicenow>false</servicenow>
@@ -69,15 +91,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-27 10:54:08</sys_created_on>
         <sys_id>f43030b1db3f4010f4bd5c7a48961958</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>Cart Assets</sys_name>
         <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
         <sys_update_name>sp_widget_f43030b1db3f4010f4bd5c7a48961958</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 13:44:11</sys_updated_on>
-        <template><![CDATA[<div ng-repeat = "model in c.data.cart_list">
+        <sys_updated_on>2020-03-27 15:41:35</sys_updated_on>
+        <template><![CDATA[<div class="card-custom" ng-if="c.data.cart_list.length == 0">
+  <div class="card-body">
+    <h1>Cart is empty </h1>
+  </div>
+</div>
+
+<div ng-repeat = "model in c.data.cart_list">
 <div class="card-custom">
   <div class="card-body">
 <div class="table-responsive">
@@ -98,7 +126,7 @@
       <th scope="row">{{$index + 1}}</th>
       <td>{{asset.display_name}}</td>
       <td>{{asset.quantity}}</td>
-      <td><button ng-click="c.deleteCart(asset.sys_id)" class="btn btn-link text-danger" >Delete</button></td>
+      <td><button ng-click="c.deleteCart(asset.cart_sys_id)" class="btn btn-link text-danger" >Delete</button></td>
     </tr>
   </tbody>
 </table>

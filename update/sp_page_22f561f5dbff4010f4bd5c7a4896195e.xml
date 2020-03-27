@@ -32,24 +32,24 @@
 }</css>
         <draft>false</draft>
         <dynamic_title_structure/>
-        <id>assets</id>
+        <id>assets_in_transit</id>
         <internal>false</internal>
         <public>false</public>
         <roles/>
         <short_description/>
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-27 07:13:10</sys_created_on>
-        <sys_id>c4bd7f65db3b4010f4bd5c7a489619b6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>assets</sys_name>
+        <sys_created_on>2020-03-27 14:48:50</sys_created_on>
+        <sys_id>22f561f5dbff4010f4bd5c7a4896195e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>assets_in_transit</sys_name>
         <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
-        <sys_update_name>sp_page_c4bd7f65db3b4010f4bd5c7a489619b6</sys_update_name>
+        <sys_update_name>sp_page_22f561f5dbff4010f4bd5c7a4896195e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 14:42:59</sys_updated_on>
-        <title>Assets (In Storage)</title>
+        <sys_updated_on>2020-03-27 14:49:11</sys_updated_on>
+        <title>Assets (In Transit)</title>
     </sp_page>
-    <sys_translated_text action="delete_multiple" query="documentkey=c4bd7f65db3b4010f4bd5c7a489619b6"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=22f561f5dbff4010f4bd5c7a4896195e"/>
 </record_update>

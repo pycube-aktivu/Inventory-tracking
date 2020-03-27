@@ -2,41 +2,41 @@
     <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
         <active>true</active>
         <color>default</color>
-        <condition>gs.isLoggedIn()</condition>
+        <condition/>
         <display_1/>
         <display_2/>
         <display_date/>
         <filter/>
-        <glyph>suitcase</glyph>
+        <glyph>ship</glyph>
         <hint/>
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <label>Asset</label>
+        <label>In Transit</label>
         <order>200</order>
         <record_script/>
         <sc_cat_item/>
         <sc_category/>
         <short_description/>
-        <sp_page display_value="assets">c4bd7f65db3b4010f4bd5c7a489619b6</sp_page>
-        <sp_rectangle_menu display_value="Header Main Menu">b4ff3f9ddb3b0010f4bd5c7a48961923</sp_rectangle_menu>
-        <sp_rectangle_menu_item/>
+        <sp_page display_value="assets_in_transit">22f561f5dbff4010f4bd5c7a4896195e</sp_page>
+        <sp_rectangle_menu/>
+        <sp_rectangle_menu_item display_value="Asset">7080b871db3f4010f4bd5c7a4896197d</sp_rectangle_menu_item>
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-27 10:55:43</sys_created_on>
-        <sys_id>7080b871db3f4010f4bd5c7a4896197d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Asset</sys_name>
+        <sys_created_on>2020-03-27 14:57:58</sys_created_on>
+        <sys_id>32e76579dbff4010f4bd5c7a48961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>In Transit</sys_name>
         <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
-        <sys_update_name>sp_rectangle_menu_item_7080b871db3f4010f4bd5c7a4896197d</sys_update_name>
+        <sys_update_name>sp_rectangle_menu_item_32e76579dbff4010f4bd5c7a48961913</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 15:01:02</sys_updated_on>
+        <sys_updated_on>2020-03-27 14:57:58</sys_updated_on>
         <table/>
-        <type>url</type>
+        <type>page</type>
         <url/>
         <url_target/>
     </sp_rectangle_menu_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=7080b871db3f4010f4bd5c7a4896197d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=32e76579dbff4010f4bd5c7a48961913"/>
 </record_update>

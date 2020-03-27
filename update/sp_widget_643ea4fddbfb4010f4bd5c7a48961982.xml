@@ -4,6 +4,19 @@
         <client_script><![CDATA[function() {
   /* widget controller */
   var c = this;
+	c.delivery_date ='';
+	console.log(c.data.stock_rooms);
+	
+	 c.createOrder = function() {
+        c.data.action = "createOrder";
+		 console.log(c.delivery_date);
+		 c.data.frm_delivery_date = c.delivery_date;
+		 c.data.frm_stock_room = c.stock_room;
+        c.server.update().then(function() {
+            c.data.action = undefined;
+			alert("Delivery request has been created.");
+        });
+	 }
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>&#13;
@@ -26,8 +39,44 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+    //alm_stockroom
+    data.stock_rooms = [];
+
+    var gr = new GlideRecord('alm_stockroom');
+    gr.addQuery('type', 'a6aa2b3f3763100044e0bfc8bcbe5ddf');
+    gr.query();
+    while (gr.next()) {
+        var stock_data = {};
+        stock_data.name = gr.name.getDisplayValue();
+        stock_data.sys_id = gr.sys_id.getDisplayValue();
+        data.stock_rooms.push(stock_data);
+    }
+
+    if (input) {
+        if (input.action == "createOrder") {
+            gs.getErrorMessages('Test');
+            var gr_cart = new GlideRecord('x_477386_inventory_user_cart');
+            gr_cart.addQuery('user', gs.getUserID());
+            gr_cart.query();
+            while (gr_cart.next()) {
+                var grt = new GlideRecord('x_477386_inventory_transfer_order_lines');
+                grt.initialize();
+                grt.customer_name = gs.getUserName();
+                grt.model = gr_cart.product_model;
+                grt.model_category = gr_cart.model_category;
+                grt.asset = gr_cart.asset;
+                grt.to_stockroom = input.frm_stock_room;
+                grt.requested_date = input.frm_delivery_date;
+                grt.insert();
+            }
+
+            var kids = new GlideRecord('x_477386_inventory_user_cart');
+            kids.addQuery('user', gs.getUserID());
+            kids.deleteMultiple();
+        }
+    }
 
 })();]]></script>
         <servicenow>false</servicenow>
@@ -35,29 +84,29 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-27 10:45:24</sys_created_on>
         <sys_id>643ea4fddbfb4010f4bd5c7a48961982</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Cart Form</sys_name>
         <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
         <sys_update_name>sp_widget_643ea4fddbfb4010f4bd5c7a48961982</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 11:42:39</sys_updated_on>
+        <sys_updated_on>2020-03-27 15:38:19</sys_updated_on>
         <template><![CDATA[<div>
 	 <form class="" id="">
           <div class="card-custom">
-            <div class="card-body">
+            <div class="card-body">              
               <div class="form-group">
-                <label for="filed-date" class="custom_label">Date filed:</label>
-                <input type="text" class="form-control" id="filed-date">
+                <label for="filed-date" class="custom_label">Delivery On:</label>
+                <sp-date-picker ng-model="c.delivery_date" sn-change=""></sp-date-picker>
+                
               </div>
               <div class="form-group">
-                <label for="stockroom" class="custom_label">Stockroom:</label>
-                <select class="form-control" id="stockroom">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
+                <label for="stockroom" class="custom_label">Delivery To:</label>
+                <select class="form-control" id="stockroom" ng-model="c.stock_room">
+                  <option value="">Select</option>
+                  <option ng-repeat="stock in c.data.stock_rooms" value="{{stock.sys_id}}">{{stock.name}}</option>
+                
                 </select>
               </div>
               <div class="row">
@@ -65,7 +114,7 @@
                   <button class="btn btn-link">Add more</button>
                 </div>
                 <div class="col-sm-6">
-                  <button class="btn btn-success custom-btn-checkout">Submit</button>
+                  <button  ng-click="c.createOrder()" class="btn btn-success custom-btn-checkout">Submit</button>
                 </div>
               </div>
             </div>

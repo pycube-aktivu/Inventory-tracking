@@ -6,22 +6,22 @@
         <bootstrap_alt>false</bootstrap_alt>
         <class_name/>
         <container_class_name/>
-        <name>Assets (In Storage) - Container 1</name>
+        <name>Delivered Assets - Container 1</name>
         <order>1</order>
-        <sp_page display_value="assets">c4bd7f65db3b4010f4bd5c7a489619b6</sp_page>
+        <sp_page display_value="delivered_assets">1b6629f5dbff4010f4bd5c7a489619de</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-27 07:13:10</sys_created_on>
-        <sys_id>88bd7f65db3b4010f4bd5c7a489619b9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Assets (In Storage) - Container 1</sys_name>
+        <sys_created_on>2020-03-27 14:50:47</sys_created_on>
+        <sys_id>1366edf5dbff4010f4bd5c7a48961957</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Delivered Assets - Container 1</sys_name>
         <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
-        <sys_update_name>sp_container_88bd7f65db3b4010f4bd5c7a489619b9</sys_update_name>
+        <sys_update_name>sp_container_1366edf5dbff4010f4bd5c7a48961957</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 14:42:59</sys_updated_on>
+        <sys_updated_on>2020-03-27 14:51:03</sys_updated_on>
         <title/>
         <width>container</width>
     </sp_container>

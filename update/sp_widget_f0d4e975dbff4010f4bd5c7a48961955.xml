@@ -4,34 +4,10 @@
         <client_script><![CDATA[function() {
     /* widget controller */
     var c = this;
-    c.addAsset = function(asset_id, model_id, cat_sys_id) {
-        c.data.action = "addAsset";
-        c.data.asset_id = asset_id;
-        c.data.model_id = model_id;
-        c.data.cat_sys_id = cat_sys_id;
-        c.server.update().then(function() {
-            c.data.action = undefined;
-			alert("Added to cart");
-        });
+    
+    
 
-    };
-    c.checkButton = function(asset_sys_id) {
-        if (c.data.cart_assets.indexOf(asset_sys_id) !== -1) {
-            return false;
-        }
-        return true;
-    };
-
-    c.getModelQuantity = function(model_sys_id) {
-        for(var i=0; i<c.data.cart_models.length; i++) {
-            if (c.data.cart_models[i].sys_id == model_sys_id) {
-                return c.data.cart_models[i].count;
-            } else {
-                return 0;
-            }
-        }
-
-    };
+    
 }]]></client_script>
         <controller_as>c</controller_as>
         <css> .card-custom-check{&#13;
@@ -163,12 +139,12 @@ margin: 5px 0px 0px;&#13;
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
-        <id>list_of_assets</id>
+        <id>delivered_assets</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {
   
 }]]></link>
-        <name>List of assets</name>
+        <name>List of delivered assets</name>
         <option_schema/>
         <public>false</public>
         <roles/>
@@ -176,7 +152,7 @@ margin: 5px 0px 0px;&#13;
     /* populate the 'data' object */
     /* e.g., data.table = $sp.getValue('table'); */
     // Asset State 6=>Instorage
-    var asset_state = '6';
+    var asset_state = '4'; //Delivered Assets
     data.asset_list = [];
 
     data.cart_assets = [];
@@ -206,7 +182,7 @@ margin: 5px 0px 0px;&#13;
         model_list.count = gr_model.getAggregate('SUM', 'quantity');
         model_list.name = gr_model.model.getDisplayValue();
         model_list.sys_id = gr_model.model.sys_id.getDisplayValue();
-        model_list.cat_sys_id = gr_model.model.model_category.sys_id.getDisplayValue();
+        model_list.cat_sys_id = gr_model.model_category.sys_id.getDisplayValue();
         data.cart_model_sys_id.push(model_list.sys_id);
         model_list.assets = [];
 
@@ -234,64 +210,27 @@ margin: 5px 0px 0px;&#13;
         data.asset_list.push(model_list);
     }
 
-    
-        var gr_cart = new GlideAggregate('x_477386_inventory_user_cart');
-        gr_cart.addAggregate('SUM', 'quantity'); //product_model
-        gr_cart.addQuery('product_model', "IN", data.cart_model_sys_id.join());
-        gr_cart.addQuery('user', gs.getUserID());
-        gr_cart.groupBy("product_model");
-        gr_cart.query();
-        while (gr_cart.next()) {
-            var cart_model_data = {};
-            cart_model_data.count = gr_cart.getAggregate('SUM', 'quantity');
-            cart_model_data.sys_id = gr_cart.product_model.sys_id.getDisplayValue();
-            data.cart_models.push(cart_model_data);
-			var gr_cart_asset = new GlideRecord('x_477386_inventory_user_cart');
-			gr_cart_asset.addQuery("product_model", cart_model_data.sys_id);
-			gr_cart_asset.addQuery('user', gs.getUserID());
-			gr_cart_asset.query();
-			while(gr_cart_asset.next()){
-				data.cart_assets.push(gr_cart_asset.asset.sys_id.getDisplayValue());
-			}
-        }
-    
-    
-    if (input) {
-        if (input.action == "addAsset") {
-            var gr = new GlideRecord('x_477386_inventory_user_cart');
-            gr.initialize();
-            gr.asset = input.asset_id;
-            gr.product_model = input.model_id;
-            gr.model_category = input.cat_sys_id;
-            gr.user = gs.getUserName();
-            gr.insert();
-        }
-    }
-
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-27 07:16:49</sys_created_on>
-        <sys_id>997e7b69db3b4010f4bd5c7a489619e1</sys_id>
-        <sys_mod_count>52</sys_mod_count>
-        <sys_name>List of assets</sys_name>
+        <sys_created_on>2020-03-27 14:43:48</sys_created_on>
+        <sys_id>f0d4e975dbff4010f4bd5c7a48961955</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>List of delivered assets</sys_name>
         <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
-        <sys_update_name>sp_widget_997e7b69db3b4010f4bd5c7a489619e1</sys_update_name>
+        <sys_update_name>sp_widget_f0d4e975dbff4010f4bd5c7a48961955</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 15:17:23</sys_updated_on>
+        <sys_updated_on>2020-03-27 14:47:01</sys_updated_on>
         <template><![CDATA[<div ng-repeat = "model in c.data.asset_list">
 <!-- your widget template -->
   <div class="row">
       <div class="col-sm-12">
         <h2 class="main_asset_heading_new">
           {{model.name}}<span>{{model.count}}</span>
-        </h2>
-        <h4 >
-          Added to cart (Quantity): <strong>{{c.getModelQuantity(model.sys_id)}}</strong> 
-        </h4>
+        </h2>        
         <hr class="custom-line-hr">
       </div>
     </div>
@@ -314,12 +253,7 @@ margin: 5px 0px 0px;&#13;
                   <td class="text-right">{{asset.install_date}}</td>
                 </tr>
               </tbody>
-            </table>
-            <div class="cart-button text-center">
-              <button type="submit" ng-if="c.checkButton(asset.sys_id)" ng-click="c.addAsset(asset.sys_id, model.sys_id, model.cat_sys_id)" class="button btn-primary btn-sm custom-btn"><i class="fa fa-shopping-cart carticon" aria-hidden="true"></i> Add To Cart</button>
-              <button  ng-if="!c.checkButton(asset.sys_id)" disabled  class="button btn-info btn-sm custom-btn-disabled"><i class="fa fa-shopping-cart carticon" aria-hidden="true"></i> Added To Cart</button>
-              
-            </div>
+            </table>            
           </div>
         </label>
       </div>      
