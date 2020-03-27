@@ -4,6 +4,12 @@
         <client_script><![CDATA[function() {
   /* widget controller */
   var c = this;
+	
+	c.TEST = {
+displayValue: '',
+value: '',
+name: ''
+};
 	c.delivery_date ='';
 	console.log(c.data.stock_rooms);
 	
@@ -68,7 +74,7 @@
                 grt.model_category = gr_cart.model_category;
                 grt.asset = gr_cart.asset;
                 grt.to_stockroom = input.frm_stock_room;
-                grt.requested_date = input.frm_delivery_date;
+                grt.delivery_by_date = input.frm_delivery_date;
                 grt.insert();
             }
 
@@ -84,21 +90,22 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-27 10:45:24</sys_created_on>
         <sys_id>643ea4fddbfb4010f4bd5c7a48961982</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Cart Form</sys_name>
         <sys_package display_value="Inventory Tracking" source="x_477386_inventory">2e8a1534db3b0010f4bd5c7a4896191b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Tracking">2e8a1534db3b0010f4bd5c7a4896191b</sys_scope>
         <sys_update_name>sp_widget_643ea4fddbfb4010f4bd5c7a48961982</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 15:38:19</sys_updated_on>
+        <sys_updated_on>2020-03-27 16:41:09</sys_updated_on>
         <template><![CDATA[<div>
 	 <form class="" id="">
           <div class="card-custom">
             <div class="card-body">              
               <div class="form-group">
                 <label for="filed-date" class="custom_label">Delivery On:</label>
-                <sp-date-picker ng-model="c.delivery_date" sn-change=""></sp-date-picker>
+               <!-- <sp-date-picker ng-model="c.delivery_date" sn-change="" sn-include-time="true"></sp-date-picker> -->
+                <sp-date-picker field = "c.TEST" sn-include-time="true" ng-model="c.delivery_date" sn-change="customDate($event)"></sp-date-picker>
                 
               </div>
               <div class="form-group">
